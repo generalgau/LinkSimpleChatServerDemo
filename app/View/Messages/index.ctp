@@ -12,7 +12,7 @@
 	<?php foreach ($messages as $message): ?>
 	<tr>
 		<td>
-			<?php echo $this->Html->link($message['Thread']['message_id'], array('controller' => 'threads', 'action' => 'view', $message['Thread']['message_id'])); ?>
+			<?php echo $this->Html->link($message['Thread']['thread_id'], array('controller' => 'threads', 'action' => 'view', $message['Thread']['thread_id'])); ?>
 		</td>
 		<td><?php echo h($message['Message']['msg_to']); ?>&nbsp;</td>
 		<td><?php echo h($message['Message']['msg_from']); ?>&nbsp;</td>

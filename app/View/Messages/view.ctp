@@ -3,7 +3,7 @@
 	<dl>
 		<dt><?php echo __('Thread'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($message['Thread']['message_id'], array('controller' => 'threads', 'action' => 'view', $message['Thread']['message_id'])); ?>
+			<?php echo $this->Html->link($message['Thread']['thread_id'], array('controller' => 'threads', 'action' => 'view', $message['Thread']['thread_id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Msg To'); ?></dt>
