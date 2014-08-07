@@ -41,6 +41,7 @@ class ThreadsController extends AppController {
  */
 	public function view($id = null) {
 		if ($this->request->is('ajax')) {
+			debug ( $this->request->data );
 			if ( array_key_exists("thread_id", $this->request->data) && $this->request->data['thread_id'] > 0){
 				$options = array(
 					'conditions' => array('Thread.' . $this->Thread->primaryKey => $message_id),
