@@ -6,12 +6,6 @@ App::uses('AppModel', 'Model');
  */
 class User extends AppModel {
 
-/**
- * Primary key field
- *
- * @var string
- */
-	public $primaryKey = 'user_id';
 
 /**
  * Display field
@@ -20,4 +14,22 @@ class User extends AppModel {
  */
 	public $displayField = 'username';
 
+	
+	
+	public $validate = array(
+		'username' => array(
+                        'unique' => array(
+                            'rule' => 'isUnique',
+                            'required' => 'create'
+                        ),
+		'notempty' => array(
+				'rule' => array('notempty'),
+			),
+		),
+		'password' => array(
+			'at least 6 characters' => array(
+				'rule' => array('minLength', '6'),
+			),
+		)
+	);
 }
