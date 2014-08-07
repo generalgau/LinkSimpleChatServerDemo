@@ -40,7 +40,10 @@ class User extends AppModel {
             $this->data[$this->alias]['password'] = $passwordHasher->hash(
                 $this->data[$this->alias]['password']
             );
+			debug ($this->data[$this->alias]['password']);
         }
+		else
+		  debug ("it didn't happen");
         return true;
     }
 }
