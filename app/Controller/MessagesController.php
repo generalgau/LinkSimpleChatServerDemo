@@ -40,11 +40,30 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if (!$this->Message->exists($id)) {
-			throw new NotFoundException(__('Invalid message'));
+		if ($this->request->is('ajax')) {
+			if ( 
+				array_key_exists("message_id", $this->request->data) &&
+				$this->request->data['message_id'] > 0
+			){
+				$options = array(
+					'conditions' => array('Message.' . $this->Message->primaryKey => $message_id),
+					'recursive' => 2
+				);
+				$out = $this->Message->find('first', $options);
+				if ($out){
+					$this->sendReply( "message", $out);
+				} else {
+					$this->sendFail( "message fetch failed" );
+				}
+			}
 		}
-		$options = array('conditions' => array('Message.' . $this->Message->primaryKey => $id));
-		$this->set('message', $this->Message->find('first', $options));
+		else {
+			if (!$this->Message->exists($id)) {
+				throw new NotFoundException(__('Invalid message'));
+			}
+			$options = array('conditions' => array('Message.' . $this->Message->primaryKey => $id));
+			$this->set('message', $this->Message->find('first', $options));
+		}
 	}
 
 /**

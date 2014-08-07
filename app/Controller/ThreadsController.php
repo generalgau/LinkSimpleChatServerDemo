@@ -40,11 +40,27 @@ class ThreadsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if (!$this->Thread->exists($id)) {
-			throw new NotFoundException(__('Invalid thread'));
+		if ($this->request->is('ajax')) {
+			if ( array_key_exists("thread_id", $this->request->data) && $this->request->data['thread_id'] > 0){
+				$options = array(
+					'conditions' => array('Thread.' . $this->Thread->primaryKey => $message_id),
+					'recursive' => 2
+				);
+				$out = $this->Thread->find('first', $options);
+				if ($out){
+					$this->sendReply( "thread data", $out);
+				} else {
+					$this->sendFail( "thread fetch failed" );
+				}
+			}
 		}
-		$options = array('conditions' => array('Thread.' . $this->Thread->primaryKey => $id));
-		$this->set('thread', $this->Thread->find('first', $options));
+		else {
+			if (!$this->Thread->exists($id)) {
+				throw new NotFoundException(__('Invalid thread'));
+			}
+			$options = array('conditions' => array('Thread.' . $this->Thread->primaryKey => $id));
+			$this->set('thread', $this->Thread->find('first', $options));
+		}	
 	}
 
 /**
