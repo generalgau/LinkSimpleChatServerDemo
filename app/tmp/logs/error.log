@@ -1,0 +1,49 @@
+2014-08-06 19:01:45 Error: [MissingControllerException] Controller class BrokerController could not be found.
+Exception Attributes: array (
+  'class' => 'BrokerController',
+  'plugin' => NULL,
+)
+Request URL: /broker/rest/api
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-06 19:41:49 Error: Fatal Error (4): syntax error, unexpected ''link,' (T_ENCAPSED_AND_WHITESPACE) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Config/database.php, line 26]
+2014-08-06 19:41:49 Error: [FatalErrorException] syntax error, unexpected ''link,' (T_ENCAPSED_AND_WHITESPACE)
+Request URL: /
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 26, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 26, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 19:55:06 Error: [MissingHelperException] Helper class JsonHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JsonHelper',
+  'plugin' => false,
+)
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(869): HelperCollection->load('Json', Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(343): View->loadHelpers()
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(1240): View->__construct(Object(ThreadsController))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(938): Controller->_getViewObject()
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-08-06 19:55:41 Error: [MissingHelperException] Helper class JSONHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JSONHelper',
+  'plugin' => false,
+)
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(869): HelperCollection->load('JSON', Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(343): View->loadHelpers()
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(1240): View->__construct(Object(ThreadsController))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(938): Controller->_getViewObject()
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
