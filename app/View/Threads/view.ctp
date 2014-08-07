@@ -3,7 +3,7 @@
 	<dl>
 		<dt><?php echo __('Message Id'); ?></dt>
 		<dd>
-			<?php echo h($thread['Thread']['message_id']); ?>
+			<?php echo h($thread['Thread']['thread_id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -21,8 +21,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Thread'), array('action' => 'edit', $thread['Thread']['message_id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Thread'), array('action' => 'delete', $thread['Thread']['message_id']), null, __('Are you sure you want to delete # %s?', $thread['Thread']['message_id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Edit Thread'), array('action' => 'edit', $thread['Thread']['thread_id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Thread'), array('action' => 'delete', $thread['Thread']['thread_id']), null, __('Are you sure you want to delete # %s?', $thread['Thread']['thread_id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Threads'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Thread'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Messages'), array('controller' => 'messages', 'action' => 'index')); ?> </li>

@@ -2,20 +2,20 @@
 	<h2><?php echo __('Threads'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('message_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('thread_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($threads as $thread): ?>
 	<tr>
-		<td><?php echo h($thread['Thread']['message_id']); ?>&nbsp;</td>
+		<td><?php echo h($thread['Thread']['thread_id']); ?>&nbsp;</td>
 		<td><?php echo h($thread['Thread']['created']); ?>&nbsp;</td>
 		<td><?php echo h($thread['Thread']['modified']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $thread['Thread']['message_id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $thread['Thread']['message_id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $thread['Thread']['message_id']), null, __('Are you sure you want to delete # %s?', $thread['Thread']['message_id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $thread['Thread']['thread_id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $thread['Thread']['thread_id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $thread['Thread']['thread_id']), null, __('Are you sure you want to delete # %s?', $thread['Thread']['thread_id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

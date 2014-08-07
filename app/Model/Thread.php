@@ -12,14 +12,14 @@ class Thread extends AppModel {
  *
  * @var string
  */
-	public $primaryKey = 'message_id';
+	public $primaryKey = 'thread_id';
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'message_id';
+	public $displayField = 'thread_id';
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

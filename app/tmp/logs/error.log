@@ -47,3 +47,88 @@ Stack Trace:
 #5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
 #6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2014-08-07 16:27:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.message_id' in 'field list'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Component/PaginatorComponent.php(198): Model->find('all', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: ThreadsController->index()
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-07 16:28:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.message_id' in 'field list'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Component/PaginatorComponent.php(198): Model->find('all', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: ThreadsController->index()
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-07 16:28:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.message_id' in 'field list'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Component/PaginatorComponent.php(198): Model->find('all', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: ThreadsController->index()
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-07 16:28:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.message_id' in 'field list'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Component/PaginatorComponent.php(198): Model->find('all', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: ThreadsController->index()
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-07 16:29:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.message_id' in 'field list'
+Request URL: /threads/index
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Component/PaginatorComponent.php(198): Model->find('all', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(32): PaginatorComponent->paginate()
+#8 [internal function]: ThreadsController->index()
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
