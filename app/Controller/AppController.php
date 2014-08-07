@@ -35,8 +35,26 @@ class AppController extends Controller {
 	/**
 	 * Add in the DebugKit toolbar
 	 */
-	public $components = array('DebugKit.Toolbar');
+	  public $components = array(
+        'Session',
+        'Auth' => array(
+            //'loginRedirect' => array('controller' => 'users', 'action' => 'loginok'),
+            //'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
+            'authError' => 'Did you really think you are allowed to see that?'
+        ),
+		'DebugKit.Toolbar'
+    );
 
+	public function beforeFilter() {
+        $this->Auth->allow('view');
+        
+        // figure out if jsonp request, and re-map this->request->data from this->request->query
+		if (isset($this->request->query) && array_key_exists('callback', $this->request->query)){
+			$this->request->data = $this->request->query;
+			unset($this->request->data['callback']);
+			unset($this->request->data['_']);
+		}
+	}
 	public function sendJsonp($data = array())
     {
         $this->autoRender = false;
