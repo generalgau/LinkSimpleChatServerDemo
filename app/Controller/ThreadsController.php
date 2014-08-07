@@ -70,6 +70,7 @@ class ThreadsController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
+			debug ($this->request->data);
 			$this->Thread->create();
 			if ($this->Thread->save($this->request->data)) {
 				$this->Session->setFlash(__('The thread has been saved.'));
