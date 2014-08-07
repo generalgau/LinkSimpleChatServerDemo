@@ -15,39 +15,39 @@ class UsersController extends AppController {
 		$this->Auth->allow('loggedin');
     }
 
-        public function logout() {
-            $this->Auth->logout();
-            $this->sendReply( "logout successful");
-        }
-        
-        public function loggedin() {
-       	    $username = $this->Auth->user('username');
-            if ( $username !== null ) {
-            	$this->sendReply ( "Login ok", $username );
-            else
-            	$this->sendFail ("Unable to fetch user. Sorry, try again later.");
-        	
-        }
+	public function logout() {
+		$this->Auth->logout();
+		$this->sendReply( "logout successful");
+	}
+	
+	public function loggedin() {
+		$username = $this->Auth->user('username');
+		if ( $username !== null ) 
+			$this->sendReply ( "Login ok", $username );
+		else
+			$this->sendFail ("Unable to fetch user. Sorry, try again later.");
+		
+	}
 
-        public function login() {
-            $this->Auth->logout();
-            if ($this->request->is('ajax')){
-               	if ($this->Auth->login()) {
-                  $this->sendReply( "Login ok", $this->Auth->user('username') ); 
-               	} else {
-                  $this->sendFail( "Login failed.." ); 
-               	}   
-            } 
+	public function login() {
+		$this->Auth->logout();
+		if ($this->request->is('ajax')){
+			if ($this->Auth->login()) {
+			  $this->sendReply( "Login ok", $this->Auth->user('username') ); 
+			} else {
+			  $this->sendFail( "Login failed.." ); 
+			}   
+		} 
 
-            else if ($this->request->is('post')) {
-                if ($this->Auth->login()) {
-                    return $this->redirect(
-                        array('controller' => 'threads', 'action' => "view")
-                    );
-                } 
-            }
+		else if ($this->request->is('post')) {
+			if ($this->Auth->login()) {
+				return $this->redirect(
+					array('controller' => 'threads', 'action' => "view")
+				);
+			} 
+		}
 
-        }
+	}
         
         
 
@@ -59,7 +59,7 @@ class UsersController extends AppController {
 	public function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->Paginator->paginate());
-}
+	}
 
 /**
  * view method
