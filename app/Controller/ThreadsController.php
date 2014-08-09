@@ -28,8 +28,33 @@ class ThreadsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Thread->recursive = 0;
-		$this->set('threads', $this->Paginator->paginate());
+		if ($this->request->is('get')) {
+			$options = array(
+				'fields' => array (
+					'Thread.thread_id',
+					'Message.to',
+					'Message.from',
+				),
+				'conditions' => array(
+					Or{
+						'Message.to' => $this->Auth->user['username'],
+						'Message.from' => $this->Auth->user['username']
+					}
+					
+				),
+				'recursive' => 2
+			);
+			$out = $this->Thread->find('all', $options);
+			debug ($out);
+			if ($out){
+				$this->sendReply( "thread data", $out);
+			} else {
+				$this->sendFail( "thread fetch failed" );
+			}
+		} else {
+			$this->Thread->recursive = 0;
+			$this->set('threads', $this->Paginator->paginate());
+		}
 	}
 
 /**
