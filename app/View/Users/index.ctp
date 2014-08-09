@@ -2,7 +2,7 @@
 	<h2><?php echo __('Users'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('username'); ?></th>
 			<th><?php echo $this->Paginator->sort('password'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
@@ -10,7 +10,7 @@
 	</tr>
 	<?php foreach ($users as $user): ?>
 	<tr>
-		<td><?php echo h($user['User']['user_id']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['password']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['created']); ?>&nbsp;</td>

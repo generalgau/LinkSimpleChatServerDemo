@@ -40,7 +40,7 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if ($this->request->is('ajax')) {
+		if ($this->request->is('get')) {
 			if ( 
 				array_key_exists("message_id", $this->request->data) &&
 				$this->request->data['message_id'] > 0

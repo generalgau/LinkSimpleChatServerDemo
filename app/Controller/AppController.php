@@ -35,14 +35,22 @@ class AppController extends Controller {
 	/**
 	 * Add in the DebugKit toolbar
 	 */
+
+	public $helpers = array('Html', 'Form', 'Js'=>array("Jquery"));
+
+
 	  public $components = array(
         'Session',
         'Auth' => array(
+		'authenticate' => array(
+            		'Form' => array(
+            	   		'passwordHasher' => 'Blowfish'	
+			)
+        	),
             //'loginRedirect' => array('controller' => 'users', 'action' => 'loginok'),
             //'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
             'authError' => 'Did you really think you are allowed to see that?'
-        ),
-		'DebugKit.Toolbar'
+        )
     );
 
 	public function beforeFilter() {
@@ -98,7 +106,7 @@ class AppController extends Controller {
 			$ret = json_encode(array('success'=>'false'));
 		} 
 		if ( array_key_exists('callback', $this->request->query) ){
-			$return = sprintf('%s(%s)', h($this->request->query('callback')), json_encode($data));
+			$return = sprintf('%s(%s)', h($this->request->query('callback')), json_encode($ret));
 			$this->response->body($return);
 		} else {
 			$this->response->body( json_encode( $ret ));          

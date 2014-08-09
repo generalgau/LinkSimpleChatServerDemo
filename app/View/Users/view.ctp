@@ -3,7 +3,7 @@
 	<dl>
 		<dt><?php echo __('User Id'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['user_id']); ?>
+			<?php echo h($user['User']['id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Username'); ?></dt>

@@ -7,6 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class UsersController extends AppController {
+public $helpers = array('Html', 'Form', 'Js'=>array("Jquery"));
 
 	public $components = array('Paginator', 'Cookie','RequestHandler');
 
@@ -31,7 +32,7 @@ class UsersController extends AppController {
 
 	public function login() {
 		$this->Auth->logout();
-		if ($this->request->is('ajax')){
+		if ($this->request->is('get')){
 			if ($this->Auth->login()) {
 			  $this->sendReply( "Login ok", $this->Auth->user('username') ); 
 			} else {
@@ -42,9 +43,12 @@ class UsersController extends AppController {
 		else if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
 				return $this->redirect(
-					array('controller' => 'threads', 'action' => "view")
+					array('controller' => 'threads', 'action' => "index")
 				);
-			} 
+			}
+			else
+			        $this->Session->setFlash(__('Invalid username or password, try again'));
+
 		}
 
 	}

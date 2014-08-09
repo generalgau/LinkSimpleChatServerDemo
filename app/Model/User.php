@@ -23,7 +23,7 @@ class User extends AppModel {
                             'rule' => 'isUnique',
                             'required' => 'create'
                         ),
-		'notempty' => array(
+			'notempty' => array(
 				'rule' => array('notempty'),
 			),
 		),
@@ -33,17 +33,14 @@ class User extends AppModel {
 			),
 		)
 	);
-	
+
 	 public function beforeSave($options = array()) {
         if (isset($this->data[$this->alias]['password'])) {
             $passwordHasher = new BlowfishPasswordHasher();
             $this->data[$this->alias]['password'] = $passwordHasher->hash(
                 $this->data[$this->alias]['password']
             );
-			debug ($this->data[$this->alias]['password']);
         }
-		else
-		  debug ("it didn't happen");
         return true;
     }
 }

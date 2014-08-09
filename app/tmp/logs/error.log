@@ -132,3 +132,200 @@ Stack Trace:
 #11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
 #12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-08-07 21:54:58 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/1
+Stack Trace:
+#0 [internal function]: ThreadsController->view('1')
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-07 21:55:03 Error: [MissingControllerException] Controller class ThreadController could not be found.
+Exception Attributes: array (
+  'class' => 'ThreadController',
+  'plugin' => NULL,
+)
+Request URL: /thread/view/1
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-07 22:08:06 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view?callback=jQuery20208746418352238834_1407449285276&thread_id=1&_=1407449285277
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-07 22:13:58 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/UsersController.php, line 15]
+2014-08-07 22:13:58 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/lib/opensh...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/lib/opensh...', 15, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/lib/opensh...', 15, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 22:54:42 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/UsersController.php, line 15]
+2014-08-07 22:54:42 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /users/login
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/lib/opensh...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/lib/opensh...', 15, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/lib/opensh...', 15, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 22:55:33 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/login.ctp',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-07 23:02:55 Error: [MissingActionException] Action UsersController::add.ctp() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.ctp',
+)
+Request URL: /users/add.ctp
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-07 23:02:57 Error: [MissingActionException] Action UsersController::add.() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.',
+)
+Request URL: /users/add.
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-07 23:02:59 Error: [MissingActionException] Action UsersController::add.() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.',
+)
+Request URL: /users/add.
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-07 23:25:49 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Model/User.php, line 38]
+2014-08-07 23:25:49 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /users/add
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', '/var/lib/opensh...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', '/var/lib/opensh...', 38, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', '/var/lib/opensh...', 38, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 23:28:21 Error: Fatal Error (1): Class 'BlowfishPasswordHasher' not found in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Model/User.php, line 38]
+2014-08-07 23:28:21 Error: [FatalErrorException] Class 'BlowfishPasswordHasher' not found
+Request URL: /users/add
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Class 'Blowfish...', '/var/lib/opensh...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Blowfish...', '/var/lib/opensh...', 38, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Blowfish...', '/var/lib/opensh...', 38, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 23:39:11 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Model/User.php, line 8]
+2014-08-07 23:39:11 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 8, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 8, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 23:42:11 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Model/User.php, line 8]
+2014-08-07 23:42:11 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 8, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 8, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 23:42:13 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Model/User.php, line 8]
+2014-08-07 23:42:13 Error: [FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 8, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 8, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-08 20:33:23 Error: Fatal Error (4): syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/AppController.php, line 43]
+2014-08-08 20:33:23 Error: [FatalErrorException] syntax error, unexpected '' => '' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /users/login
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 43, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 43, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-08 20:41:27 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view?callback=jQuery202003236505785025656_1407530485309&thread_id=1&_=1407530485310
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-08 21:01:37 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/json/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/json/login.ctp',
+)
+Request URL: /users/login.json?callback=jQuery2020946595601271838_1407531691868&_=1407531691869
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): JsonView->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-08 21:02:09 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/json/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/json/login.ctp',
+)
+Request URL: /users/login.json?callback=jQuery2020946595601271838_1407531691868&_=1407531691870
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): JsonView->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-08 21:28:57 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/json/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Users/json/login.ctp',
+)
+Request URL: /users/login.json?callback=jQuery20208698473912663758_1407533330090&User%5Busername%5D=ilya&User%5Bpassword%5D=coverity&_=1407533330091
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): JsonView->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
