@@ -329,3 +329,125 @@ Stack Trace:
 #3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-08-09 12:22:23 Error: Fatal Error (4): syntax error, unexpected 'Or' (T_LOGICAL_OR), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 39]
+2014-08-09 12:22:23 Error: [FatalErrorException] syntax error, unexpected 'Or' (T_LOGICAL_OR), expecting ')'
+Request URL: /threads/index?callback=jQuery20203286456533242017_1407586938072&_=1407586938074
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 39, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 39, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-09 12:24:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.to' in 'field list'
+Request URL: /threads/index?callback=jQuery20208129593138583004_1407587085610&_=1407587085612
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(47): Model->find('all', Array)
+#7 [internal function]: ThreadsController->index()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-09 12:25:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.to' in 'field list'
+Request URL: /threads/index?callback=jQuery202025752601446583867_1407587141805&_=1407587141807
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(47): Model->find('all', Array)
+#7 [internal function]: ThreadsController->index()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-09 12:26:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.to' in 'field list'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(47): Model->find('all', Array)
+#7 [internal function]: ThreadsController->index()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-09 12:32:11 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Model/Thread.php, line 39]
+2014-08-09 12:32:11 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 39, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 39, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-09 12:39:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.to' in 'where clause'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Thread), 'SELECT `Message...', Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Thread), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 1, Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(46): Model->find('all', Array)
+#9 [internal function]: ThreadsController->index()
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-09 12:39:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.to' in 'where clause'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Thread), 'SELECT `Message...', Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Thread), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 1, Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(46): Model->find('all', Array)
+#9 [internal function]: ThreadsController->index()
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-09 12:39:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Message.to' in 'where clause'
+Request URL: /threads
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Thread), 'SELECT `Message...', Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Thread), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 1, Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(46): Model->find('all', Array)
+#9 [internal function]: ThreadsController->index()
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

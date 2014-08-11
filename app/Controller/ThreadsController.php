@@ -28,24 +28,22 @@ class ThreadsController extends AppController {
  * @return void
  */
 	public function index() {
-		if ($this->request->is('get')) {
+		if ($this->request->is('get') &&  isset ($this->request->query['callback']) ) {
 			$options = array(
-				'fields' => array (
-					'Thread.thread_id',
-					'Message.to',
-					'Message.from',
-				),
-				'conditions' => array(
-					Or{
-						'Message.to' => $this->Auth->user['username'],
-						'Message.from' => $this->Auth->user['username']
-					}
-					
+				'contain' => array (
+					'Message' => array (
+						'conditions' => array (
+							"OR" => array (
+								'Message.msg_to' => $this->Auth->user('username'),
+								'Message.msg_from' => $this->Auth->user('username')
+							)
+						)
+					)
 				),
 				'recursive' => 2
 			);
 			$out = $this->Thread->find('all', $options);
-			debug ($out);
+			//debug ($out);
 			if ($out){
 				$this->sendReply( "thread data", $out);
 			} else {

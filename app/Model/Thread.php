@@ -1,11 +1,15 @@
 <?php
 App::uses('AppModel', 'Model');
+
+
 /**
  * Thread Model
  *
  * @property Message $Message
  */
 class Thread extends AppModel {
+
+public $actsAs = array('Containable');
 
 /**
  * Primary key field
@@ -34,7 +38,7 @@ class Thread extends AppModel {
 			'className' => 'Message',
 			'foreignKey' => 'message_id',
 			'dependent' => false,
-			'conditions' => '',
+			'conditions' => '',    
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
