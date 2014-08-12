@@ -63,18 +63,16 @@ class ThreadsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if ($this->request->is('get')) {
-			if ( array_key_exists("thread_id", $this->request->data) && $this->request->data['thread_id'] > 0){
-				$options = array(
-					'conditions' => array('Thread.' . $this->Thread->primaryKey => $this->request->data['thread_id']),
-					'recursive' => 2
-				);
-				$out = $this->Thread->find('first', $options);
-				if ($out){
-					$this->sendReply( "thread data", $out);
-				} else {
-					$this->sendFail( "thread fetch failed" );
-				}
+		if ( array_key_exists("thread_id", $this->request->data) && $this->request->data['thread_id'] > 0){
+			$options = array(
+				'conditions' => array('Thread.' . $this->Thread->primaryKey => $this->request->data['thread_id']),
+				'recursive' => 2
+			);
+			$out = $this->Thread->find('first', $options);
+			if ($out){
+				$this->sendReply( "thread data", $out);
+			} else {
+				$this->sendFail( "thread fetch failed" );
 			}
 		}
 		else {

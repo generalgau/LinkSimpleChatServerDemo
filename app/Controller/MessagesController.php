@@ -72,7 +72,25 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function add() {
+		if ($this->request->is('get') &&
+			array_key_exists("Thread", $this->request->data) &&
+                        $this->request->data['Thread']['thread_id'] > 0 
+                ){
+                	$this->Message->create();
+                        if ($this->Message->save($this->request->data)){
+				$m = $this->Message->find("first", array(
+					'conditions' => array(
+						'message_id' => $this->Message->getLastInsertId()			)
+				)); 
+       				$this->sendReply("msg saved", $m );
+			}
+			else
+				$this->sendFail("couldn't save msg"); 
+
+
+		}
 		if ($this->request->is('post')) {
+			debug ($this->request->data);
 			$this->Message->create();
 			if ($this->Message->save($this->request->data)) {
 				$this->Session->setFlash(__('The message has been saved.'));

@@ -33,13 +33,14 @@ public $helpers = array('Html', 'Form', 'Js'=>array("Jquery"));
 	public function login() {
 		$this->Auth->logout();
 		if ($this->request->is('get')){
-			if ($this->Auth->login()) {
-			  $this->sendReply( "Login ok", $this->Auth->user('username') ); 
-			} else {
-			  $this->sendFail( "Login failed.." ); 
-			}   
-		} 
-
+			if ( array_key_exists( "User", $this->request->data)){
+				if ($this->Auth->login()) {
+			  		$this->sendReply( "Login ok", $this->Auth->user('username') ); 
+				} else {
+			  		$this->sendFail( "Login failed.." ); 
+				}   
+			} 
+		}
 		else if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
 				return $this->redirect(
