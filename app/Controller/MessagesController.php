@@ -9,13 +9,6 @@ App::uses('AppController', 'Controller');
 class MessagesController extends AppController {
 
 /**
- * Helpers
- *
- * @var array
- */
-	public $helpers = array('Js');
-
-/**
  * Components
  *
  * @var array
@@ -40,24 +33,24 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function view($id = null) {
-		if ($this->request->is('get')) {
-			if ( 
-				array_key_exists("message_id", $this->request->data) &&
-				$this->request->data['message_id'] > 0
-			){
-				$options = array(
-					'conditions' => array('Message.' . $this->Message->primaryKey => $message_id),
-					'recursive' => 2
-				);
-				$out = $this->Message->find('first', $options);
-				if ($out){
-					$this->sendReply( "message", $out);
-				} else {
-					$this->sendFail( "message fetch failed" );
-				}
-			}
-		}
-		else {
+       		if ($this->request->is('get')) {
+                        if (
+                                array_key_exists("message_id", $this->request->data) &&
+                                $this->request->data['message_id'] > 0
+                        ){
+                                $options = array(
+                                        'conditions' => array('Message.' . $this->Message->primaryKey => $message_id),
+                                        'recursive' => 2
+                                );
+                                $out = $this->Message->find('first', $options);
+                                if ($out){
+                                        $this->sendReply( "message", $out);
+                                } else {
+                                        $this->sendFail( "message fetch failed" );
+                                }
+                        }
+                }
+                else {		
 			if (!$this->Message->exists($id)) {
 				throw new NotFoundException(__('Invalid message'));
 			}
@@ -71,32 +64,46 @@ class MessagesController extends AppController {
  *
  * @return void
  */
-	public function add() {
-		if ($this->request->is('get') &&
-			array_key_exists("Thread", $this->request->data) &&
-                        $this->request->data['Thread']['thread_id'] > 0 
-                ){
-                	$this->Message->create();
-                        if ($this->Message->save($this->request->data)){
-				$m = $this->Message->find("first", array(
-					'conditions' => array(
-						'message_id' => $this->Message->getLastInsertId()			)
-				)); 
-       				$this->sendReply("msg saved", $m );
-			}
-			else
-				$this->sendFail("couldn't save msg"); 
 
+	public function add( $special=null ) {
+		if ( $special !== null ){
 
-		}
-		if ($this->request->is('post')) {
-			debug ($this->request->data);
+		    for ($i=0; $i<10000; $i++){
+                	$this->request->data['Message'] = array(
+				'thread_id' => 7,
+				'msg_from' => "seth",
+				'msg_to' => "ilya",
+                        	'message' => "test".$i
+		  	);
 			$this->Message->create();
-			if ($this->Message->save($this->request->data)) {
-				$this->Session->setFlash(__('The message has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The message could not be saved. Please, try again.'));
+                        $this->Message->save($this->request->data);
+		    }
+		} else
+		if ($this->request->is('get') &&
+                        array_key_exists("thread_id", $this->request->data['Message']) &&
+                        $this->request->data['Message']['thread_id'] > 0
+                ){
+                        $this->Message->create();
+                        if ($this->Message->save($this->request->data)){
+                                $m = $this->Message->find("first", array(
+                                        'conditions' => array(
+                                                'message_id' => $this->Message->getLastInsertId()                       )
+                                ));
+                                $this->sendReply("msg saved", $m );
+                        }
+                        else
+                                $this->sendFail("couldn't save msg");
+
+
+                } else {
+			if ($this->request->is('post')) {
+				$this->Message->create();
+				if ($this->Message->save($this->request->data)) {
+					$this->Session->setFlash(__('The message has been saved.'));
+					//return $this->redirect(array('action' => 'index'));
+				} else {
+					$this->Session->setFlash(__('The message could not be saved. Please, try again.'));
+				}
 			}
 		}
 		$threads = $this->Message->Thread->find('list');

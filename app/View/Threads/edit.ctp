@@ -4,6 +4,8 @@
 		<legend><?php echo __('Edit Thread'); ?></legend>
 	<?php
 		echo $this->Form->input('thread_id');
+		echo $this->Form->input('thread_user1');
+		echo $this->Form->input('thread_user2');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

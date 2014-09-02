@@ -3,6 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('message_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('thread_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('msg_to'); ?></th>
 			<th><?php echo $this->Paginator->sort('msg_from'); ?></th>
 			<th><?php echo $this->Paginator->sort('message'); ?></th>
@@ -11,6 +12,7 @@
 	</tr>
 	<?php foreach ($messages as $message): ?>
 	<tr>
+		<td><?php echo h($message['Message']['message_id']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($message['Thread']['thread_id'], array('controller' => 'threads', 'action' => 'view', $message['Thread']['thread_id'])); ?>
 		</td>

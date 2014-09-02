@@ -3,6 +3,8 @@
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('thread_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('thread_user1'); ?></th>
+			<th><?php echo $this->Paginator->sort('thread_user2'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -10,6 +12,8 @@
 	<?php foreach ($threads as $thread): ?>
 	<tr>
 		<td><?php echo h($thread['Thread']['thread_id']); ?>&nbsp;</td>
+		<td><?php echo h($thread['Thread']['thread_user1']); ?>&nbsp;</td>
+		<td><?php echo h($thread['Thread']['thread_user2']); ?>&nbsp;</td>
 		<td><?php echo h($thread['Thread']['created']); ?>&nbsp;</td>
 		<td><?php echo h($thread['Thread']['modified']); ?>&nbsp;</td>
 		<td class="actions">

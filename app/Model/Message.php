@@ -32,7 +32,7 @@ class Message extends AppModel {
 	public $belongsTo = array(
 		'Thread' => array(
 			'className' => 'Thread',
-			'foreignKey' => 'message_id',
+			'foreignKey' => 'thread_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

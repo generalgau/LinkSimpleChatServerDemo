@@ -4,6 +4,7 @@
 		<legend><?php echo __('Edit Message'); ?></legend>
 	<?php
 		echo $this->Form->input('message_id');
+		echo $this->Form->input('thread_id');
 		echo $this->Form->input('msg_to');
 		echo $this->Form->input('msg_from');
 		echo $this->Form->input('message');

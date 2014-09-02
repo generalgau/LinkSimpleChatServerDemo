@@ -1,6 +1,11 @@
 <div class="messages view">
 <h2><?php echo __('Message'); ?></h2>
 	<dl>
+		<dt><?php echo __('Message Id'); ?></dt>
+		<dd>
+			<?php echo h($message['Message']['message_id']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Thread'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($message['Thread']['thread_id'], array('controller' => 'threads', 'action' => 'view', $message['Thread']['thread_id'])); ?>

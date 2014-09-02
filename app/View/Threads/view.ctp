@@ -1,9 +1,19 @@
 <div class="threads view">
 <h2><?php echo __('Thread'); ?></h2>
 	<dl>
-		<dt><?php echo __('Message Id'); ?></dt>
+		<dt><?php echo __('Thread Id'); ?></dt>
 		<dd>
 			<?php echo h($thread['Thread']['thread_id']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Thread User1'); ?></dt>
+		<dd>
+			<?php echo h($thread['Thread']['thread_user1']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Thread User2'); ?></dt>
+		<dd>
+			<?php echo h($thread['Thread']['thread_user2']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -35,6 +45,7 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Message Id'); ?></th>
+		<th><?php echo __('Thread Id'); ?></th>
 		<th><?php echo __('Msg To'); ?></th>
 		<th><?php echo __('Msg From'); ?></th>
 		<th><?php echo __('Message'); ?></th>
@@ -44,6 +55,7 @@
 	<?php foreach ($thread['Message'] as $message): ?>
 		<tr>
 			<td><?php echo $message['message_id']; ?></td>
+			<td><?php echo $message['thread_id']; ?></td>
 			<td><?php echo $message['msg_to']; ?></td>
 			<td><?php echo $message['msg_from']; ?></td>
 			<td><?php echo $message['message']; ?></td>

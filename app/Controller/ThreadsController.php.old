@@ -9,6 +9,13 @@ App::uses('AppController', 'Controller');
 class ThreadsController extends AppController {
 
 /**
+ * Helpers
+ *
+ * @var array
+ */
+	public $helpers = array('Js');
+
+/**
  * Components
  *
  * @var array
@@ -22,40 +29,29 @@ class ThreadsController extends AppController {
  */
 	public function index() {
 		if ($this->request->is('get') &&  isset ($this->request->query['callback']) ) {
-                        $options = array(
-                                'contain' => array (
-                                        'Message' => array (
-                                                'conditions' => array (
-                                                        "OR" => array (
-                                                                'Message.msg_to' => $this->Auth->user('username'),
-                                                                'Message.msg_from' => $this->Auth->user('username')
-                                                        )
-                                                )
-                                        )
-                                ),
-                                'recursive' => 1
-                        );
-                        $out = $this->Thread->find('all', $options);
-                        //debug ($out);
-                        if ($out){
-				// need to put messages inside of threads
- 		
-                                for ($i = 0; $i < count ($out); $i++){
- 					$out[$i]['thread_id'] = $out[$i]['Thread']['thread_id'];
-					$out[$i]['thread_user1'] = $out[$i]['Thread']['thread_user1'];
-					$out[$i]['thread_user2'] = $out[$i]['Thread']['thread_user2'];
-					$out[$i]['created'] = $out[$i]['Thread']['created'];
-					$out[$i]['modified'] = $out[$i]['Thread']['modified'];
-					unset ($out[$i]['Thread']);
-				}
-                                //debug ( $out );
-		
-                                $this->sendReply( "thread data", $out);
-
-                        } else {
-                                $this->sendFail( "thread fetch failed" );
-                        }
-                } else {
+			$options = array(
+				'contain' => array (
+					'Message' => array (
+						'conditions' => array (
+							"OR" => array (
+								'Message.msg_to' => $this->Auth->user('username'),
+								'Message.msg_from' => $this->Auth->user('username')
+							)
+						)
+					)
+				),
+				'recursive' => 2
+			);
+			$out = $this->Thread->find('all', $options);
+			//debug ($out);
+			if ($out){
+				
+				$this->sendReply( "thread data", $out);
+				
+			} else {
+				$this->sendFail( "thread fetch failed" );
+			}
+		} else {
 			$this->Thread->recursive = 0;
 			$this->set('threads', $this->Paginator->paginate());
 		}
@@ -70,24 +66,24 @@ class ThreadsController extends AppController {
  */
 	public function view($id = null) {
 		if ( array_key_exists("thread_id", $this->request->data) && $this->request->data['thread_id'] > 0){
-                        $options = array(
-                                'conditions' => array('Thread.' . $this->Thread->primaryKey => $this->request->data['thread_id']),
-                                'recursive' => 1,
+			$options = array(
+				'conditions' => array('Thread.' . $this->Thread->primaryKey => $this->request->data['thread_id']),
+				'recursive' => 2
 			);
-                        $out = $this->Thread->find('first', $options);
-                        if ($out){
-                                $this->sendReply( "thread data", $out);
-                        } else {
-                                $this->sendFail( "thread fetch failed" );
-                        }
-                }
-                else {
+			$out = $this->Thread->find('first', $options);
+			if ($out){
+				$this->sendReply( "thread data", $out);
+			} else {
+				$this->sendFail( "thread fetch failed" );
+			}
+		}
+		else {
 			if (!$this->Thread->exists($id)) {
 				throw new NotFoundException(__('Invalid thread'));
 			}
 			$options = array('conditions' => array('Thread.' . $this->Thread->primaryKey => $id));
 			$this->set('thread', $this->Thread->find('first', $options));
-		}
+		}	
 	}
 
 /**
@@ -97,6 +93,7 @@ class ThreadsController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
+			debug ($this->request->data);
 			$this->Thread->create();
 			if ($this->Thread->save($this->request->data)) {
 				$this->Session->setFlash(__('The thread has been saved.'));

@@ -3,6 +3,8 @@
 	<fieldset>
 		<legend><?php echo __('Add Thread'); ?></legend>
 	<?php
+		echo $this->Form->input('thread_user1');
+		echo $this->Form->input('thread_user2');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
