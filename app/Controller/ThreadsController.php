@@ -68,13 +68,27 @@ class ThreadsController extends AppController {
  * @param string $id
  * @return void
  */
-	public function view($id = null) {
-		if ( array_key_exists("thread_id", $this->request->data) && $this->request->data['thread_id'] > 0){
-                        $options = array(
-                                'conditions' => array('Thread.' . $this->Thread->primaryKey => $this->request->data['thread_id']),
-                                'recursive' => 1,
-			);
-                        $out = $this->Thread->find('first', $options);
+	public function view($id = null ) {
+		if ( array_key_exists("thread_id", $this->request->data) && 
+                     $this->request->data['thread_id'] > 0 
+                ){
+			$out = $this->Thread->find('first', array(
+				'conditions' => array(
+					'Thread.thread_id' => $this->request->data["thread_id"],
+				),
+				'recursive' => 1
+			));
+			if ( $out['Thread']['lastsyncmsgid'] > 0 ){
+                                $lastmsg = $out['Thread']['lastsyncmsgid'];
+				$msgs = sizeof ( $out['Message'] );
+				for ($i = 0; $i <= $msgs ; $i++){
+					if ( $out['Message'][$i]['message_id'] < $lastmsg ){
+						unset ( $out['Message'][$i] );
+					}
+				}
+				$out['Message'] = array_values( $out['Message'] );
+                        }
+			debug (  $out  );
                         if ($out){
                                 $this->sendReply( "thread data", $out);
                         } else {
@@ -89,6 +103,25 @@ class ThreadsController extends AppController {
 			$this->set('thread', $this->Thread->find('first', $options));
 		}
 	}
+
+	public function lastsynchok(){
+		if (
+                        array_key_exists('thread_id', $this->request->data ) &&
+                        $this->request->data['thread_id'] > 0 &&
+                        array_key_exists('lastsyncmsgid', $this->request->data) &&
+			$this->request->data['lastsyncmsgid'] > 0
+                ){
+			$t = $this->request->data['thread_id'];
+			$this->Thread->id = $t;
+			
+			if ( $this->Thread->saveField('lastsyncmsgid', $this->request->data['lastsyncmsgid']) ) {
+				$this->sendReply("lastsyncmsgid", $this->request->data['lastsyncmsgid']);
+			} else
+				$this->sendFail( "can't save lastsyncmsgid" );
+			
+                } else
+			$this->sendFail( "unable to process" );
+        }
 
 /**
  * add method

@@ -1160,3 +1160,1286 @@ Stack Trace:
 #3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
 #4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-09-02 21:08:46 Error: [MissingActionException] Action ThreadsController::lastsynchok() could not be found.
+Exception Attributes: array (
+  'controller' => 'ThreadsController',
+  'action' => 'lastsynchok',
+)
+Request URL: /threads/lastsynchok?callback=jQuery202022071872418746352_1409692095832&thread_id=7&lastsyncmsgid=58&_=1409692095836
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-02 21:09:32 Error: [MissingActionException] Action ThreadsController::lastsynchok() could not be found.
+Exception Attributes: array (
+  'controller' => 'ThreadsController',
+  'action' => 'lastsynchok',
+)
+Request URL: /threads/lastsynchok?callback=jQuery202022071872418746352_1409692095832&thread_id=7&lastsyncmsgid=58&_=1409692095838
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-02 21:31:46 Error: Fatal Error (4): syntax error, unexpected 'thread_id' (T_STRING) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 102]
+2014-09-02 21:31:46 Error: [FatalErrorException] syntax error, unexpected 'thread_id' (T_STRING)
+Request URL: /threads/view/?callback=jQuery202047958047059364617_1409693310789&thread_id=7&_=1409693310794
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 102)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 102, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 102, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:31:52 Error: Fatal Error (4): syntax error, unexpected 'thread_id' (T_STRING) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 102]
+2014-09-02 21:31:52 Error: [FatalErrorException] syntax error, unexpected 'thread_id' (T_STRING)
+Request URL: /threads/view/?callback=jQuery202047958047059364617_1409693310789&thread_id=6&_=1409693310795
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 102)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 102, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 102, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:33:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery202047958047059364617_1409693310789&thread_id=7&lastsyncmsgid=58&_=1409693310797
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:34:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery202047958047059364617_1409693310789&thread_id=7&lastsyncmsgid=58&_=1409693310799
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:37:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery202047958047059364617_1409693310789&thread_id=7&lastsyncmsgid=58&_=1409693310801
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:38:30 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp',
+)
+Request URL: /threads/lastsynchok?callback=jQuery202047958047059364617_1409693310789&thread_id=7&lastsyncmsgid=58&_=1409693310803
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:39:14 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery202017630653898231685_1409693954169&thread_id=&_=1409693954170
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:40:11 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 99]
+2014-09-02 21:40:11 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /threads/index?callback=jQuery202017630653898231685_1409693954169&_=1409693954172
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 99, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 99, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:41:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsyncok?callback=jQuery202017630653898231685_1409693954169&thread_id=7&lastsyncmsgid=58&_=1409693954174
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(103): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(103): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsyncok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:45:05 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 121]
+2014-09-02 21:45:05 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /threads/view/?callback=jQuery202017630653898231685_1409693954169&thread_id=7&_=1409693954175
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 121)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 121, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 121, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:45:50 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsyncok.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsyncok.ctp',
+)
+Request URL: /threads/lastsyncok?callback=jQuery202017630653898231685_1409693954169&thread_id=7&lastsyncmsgid=58&_=1409693954177
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:47:07 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20206922098463401198_1409694428098&thread_id=&_=1409694428099
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:47:46 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp',
+)
+Request URL: /threads/lastsynchok?callback=jQuery20206922098463401198_1409694428098&thread_id=7&lastsyncmsgid=58&_=1409694428103
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:47:55 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=&_=1409694476392
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:47:59 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp',
+)
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476396
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:48:45 Error: [MissingViewException] View file "/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/View/Threads/lastsynchok.ctp',
+)
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476398
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 21:51:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476402
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(101): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(101): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:52:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476404
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(101): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(101): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:53:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476406
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(102): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 21:56:18 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 109]
+2014-09-02 21:56:18 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476411
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 109)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 109, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 109, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:57:54 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 98]
+2014-09-02 21:57:54 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476412
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 98, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 98, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:58:23 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 98]
+2014-09-02 21:58:23 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476413
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 98)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 98, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 98, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:58:47 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 111]
+2014-09-02 21:58:47 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476414
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 111, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 111, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:59:21 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 111]
+2014-09-02 21:59:21 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476415
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 111, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 111, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 21:59:50 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 111]
+2014-09-02 21:59:50 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476416
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 111, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 111, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 22:02:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476422
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 22:04:06 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 114]
+2014-09-02 22:04:06 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476425
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 114, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 114, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 22:05:35 Error: Fatal Error (4): syntax error, unexpected '*' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 114]
+2014-09-02 22:05:35 Error: [FatalErrorException] syntax error, unexpected '*'
+Request URL: /threads/view/?callback=jQuery20206065541501156986_1409694476391&thread_id=7&_=1409694476426
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 114)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 114, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 114, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 22:07:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476430
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 22:07:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476432
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-02 22:08:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Thread.id' in 'where clause'
+Request URL: /threads/lastsynchok?callback=jQuery20206065541501156986_1409694476391&thread_id=7&lastsyncmsgid=58&_=1409694476434
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Thread))
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Model->__call('findById', Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(106): Thread->findById('7')
+#10 [internal function]: ThreadsController->lastsynchok()
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-03 02:40:54 Error: Fatal Error (4): syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 84]
+2014-09-03 02:40:54 Error: [FatalErrorException] syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /threads/index?callback=jQuery20205475354499649256_1409712046247&_=1409712046252
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 84)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 84, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 84, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:42:07 Error: Fatal Error (4): syntax error, unexpected 'i' (T_STRING), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 83]
+2014-09-03 02:42:07 Error: [FatalErrorException] syntax error, unexpected 'i' (T_STRING), expecting ')'
+Request URL: /threads/index?callback=jQuery20207924416812602431_1409712117433&_=1409712117434
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 83, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 83, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:42:51 Error: Fatal Error (4): syntax error, unexpected 'i' (T_STRING), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 83]
+2014-09-03 02:42:51 Error: [FatalErrorException] syntax error, unexpected 'i' (T_STRING), expecting ')'
+Request URL: /threads/index?callback=jQuery2020886292370967567_1409712156372&_=1409712156374
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 83, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 83, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:49:21 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 88]
+2014-09-03 02:49:21 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /threads/index?callback=jQuery20207919118530116975_1409712561159&_=1409712561160
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:49:43 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 88]
+2014-09-03 02:49:43 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /threads/index?callback=jQuery2020553915360942483_1409712580988&_=1409712580990
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:49:46 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 88]
+2014-09-03 02:49:46 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /threads/view/?callback=jQuery2020553915360942483_1409712580988&thread_id=7&_=1409712580991
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:51:09 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 88]
+2014-09-03 02:51:09 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /threads/view/?callback=jQuery20204310826191212982_1409712668401&thread_id=&_=1409712668402
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 88, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:53:19 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 118]
+2014-09-03 02:53:19 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /threads/index?callback=jQuery20206980869311373681_1409712793610&_=1409712793612
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:53:21 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 118]
+2014-09-03 02:53:21 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /threads/view/?callback=jQuery20206980869311373681_1409712793610&thread_id=7&_=1409712793613
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:53:37 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 118]
+2014-09-03 02:53:37 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /threads/view/?callback=jQuery20202010683985427022_1409712817261&thread_id=&_=1409712817262
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:53:55 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 118]
+2014-09-03 02:53:55 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /threads/index?callback=jQuery20202010683985427022_1409712817261&_=1409712817264
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 118)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 118, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 02:56:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contain' in 'where clause'
+Request URL: /threads/view/?callback=jQuery20207159355019684881_1409712991709&thread_id=7&_=1409712991712
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(88): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:02:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'contain' in 'where clause'
+Request URL: /threads/view/?callback=jQuery20208852023081853986_1409713370013&thread_id=7&_=1409713370016
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(88): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:06:47 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20209331153880339116_1409713607179&thread_id=&_=1409713607180
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:07:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$lastmsg' in 'where clause'
+Request URL: /threads/view/?callback=jQuery20204055072672199458_1409713613662&thread_id=7&_=1409713613665
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Thread), 'SELECT `Message...', Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Thread), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(91): Model->find('first', Array)
+#9 [internal function]: ThreadsController->view()
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-03 03:08:36 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20208497886527329683_1409713715498&thread_id=&_=1409713715499
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:08:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$lastmsg' in 'where clause'
+Request URL: /threads/view/?callback=jQuery202026665408886037767_1409713717878&thread_id=7&_=1409713717881
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Thread), 'SELECT `Message...', Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Thread), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(87): Model->find('first', Array)
+#9 [internal function]: ThreadsController->view()
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-03 03:09:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$lastmsg' in 'where clause'
+Request URL: /threads/view/?callback=jQuery202026665408886037767_1409713717878&thread_id=7&_=1409713717882
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Thread), 'SELECT `Message...', Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Thread), Object(Message), 'hasMany', 'Message', Array, Array, true, Array, 0, Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#7 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(86): Model->find('first', Array)
+#9 [internal function]: ThreadsController->view()
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-03 03:16:24 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery2020903904641745612_1409714183787&thread_id=&_=1409714183788
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:16:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '>request->data["thread_id"]    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery20206217781498562545_1409714186675&thread_id=7&_=1409714186678
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(92): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:19:55 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20206895846405532211_1409714394957&thread_id=&_=1409714394958
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:22:22 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 92]
+2014-09-03 03:22:22 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /threads/view/?callback=jQuery20204682699574623257_1409714541583&thread_id=&_=1409714541584
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 92, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 92, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 03:22:25 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 92]
+2014-09-03 03:22:25 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /threads/index?callback=jQuery20206861614338122308_1409714543273&_=1409714543275
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 92, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 92, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 03:22:29 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 92]
+2014-09-03 03:22:29 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /threads/index?callback=jQuery20209367170517798513_1409714548806&_=1409714548807
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 92, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 92, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 03:26:57 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20208198135194834322_1409714816995&thread_id=&last_msg=0&_=1409714816996
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:41:55 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20206402896801009774_1409715715093&thread_id=&last_msg=0&_=1409715715094
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:42:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message Array  WHERE `Thread`.`thread_id` = 7    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery20201643892521969974_1409715717072&thread_id=7&last_msg=0&_=1409715717075
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(89): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:43:43 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery2020370332321152091_1409715822467&thread_id=&last_msg=0&_=1409715822468
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:43:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message LEFT Array  WHERE `Thread`.`thread_id` = 7    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery20205780631029047072_1409715824516&thread_id=7&last_msg=0&_=1409715824519
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(90): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:44:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message RIGHT Array  WHERE `Thread`.`thread_id` = 7    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery20205780631029047072_1409715824516&thread_id=7&last_msg=0&_=1409715824520
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(90): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:48:39 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery2020904563661897555_1409716118891&thread_id=&last_msg=0&_=1409716118892
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:48:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message RIGHT Array  WHERE `Thread`.`thread_id` = 7    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery20207959021592978388_1409716120414&thread_id=7&last_msg=0&_=1409716120417
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(91): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:49:54 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20208089619174133986_1409716193679&thread_id=&last_msg=0&_=1409716193680
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:50:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message INNER Array  WHERE `Thread`.`thread_id` = 7    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery202039479399542324245_1409716195553&thread_id=7&last_msg=0&_=1409716195556
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(91): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:52:57 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message INNER Array  WHERE `Thread`.`thread_id` = 7    LIMIT 1' at line 1
+Request URL: /threads/view/?callback=jQuery202039479399542324245_1409716195553&thread_id=7&last_msg=0&_=1409716195557
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(92): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:53:26 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20207514357855543494_1409716405696&thread_id=&last_msg=0&_=1409716405697
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:53:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery202009399189427495003_1409716407315&thread_id=7&last_msg=0&_=1409716407318
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(92): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:54:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message INNER Array  WHERE 1 = 1' at line 1
+Request URL: /threads/view/?callback=jQuery202009399189427495003_1409716407315&thread_id=7&last_msg=0&_=1409716407319
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(92): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:55:32 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery202024671018519438803_1409716531882&thread_id=&last_msg=0&_=1409716531883
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 03:55:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message LEFT Array  WHERE 1 = 1' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533888
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(92): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:56:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages Message LEFT Array  WHERE 1 = 1' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533889
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Thread`...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Thread`...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Thread`...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(92): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 03:58:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin LEFT Array  WHERE 1 = 1' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533890
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:01:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE 1 = 1' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533891
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:03:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533892
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:03:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533893
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(95): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:04:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 6' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=6&last_msg=0&_=1409716533894
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:04:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533895
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:04:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533896
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:06:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533897
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:07:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages MessageJoin INNER Array  WHERE `Thread`.`thread_id` = 7' at line 1
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533898
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(94): Model->find('all', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:23:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$lastmsg' in 'on clause'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533909
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(96): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:25:25 Error: Fatal Error (4): syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 96]
+2014-09-03 04:25:25 Error: [FatalErrorException] syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533910
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 96, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 96, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 04:25:57 Error: Fatal Error (4): syntax error, unexpected ''fields'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 96]
+2014-09-03 04:25:57 Error: [FatalErrorException] syntax error, unexpected ''fields'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533911
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 96)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 96, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 96, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 04:27:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$lastmsg' in 'on clause'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533914
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(97): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:29:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '$lastmsg' in 'on clause'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533915
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(97): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 04:32:05 Error: Fatal Error (4): syntax error, unexpected '$lastmsg' (T_VARIABLE), expecting ')' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 94]
+2014-09-03 04:32:05 Error: [FatalErrorException] syntax error, unexpected '$lastmsg' (T_VARIABLE), expecting ')'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533916
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 94)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 94, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 94, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 04:32:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'MessageJoin.message_id>' in 'where clause'
+Request URL: /threads/view/?callback=jQuery20204106606317218393_1409716533885&thread_id=7&last_msg=0&_=1409716533917
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Message...', Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Message...', Array, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Message...', false)
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Thread), Array)
+#5 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php(98): Model->find('first', Array)
+#7 [internal function]: ThreadsController->view()
+#8 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#9 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-03 17:37:13 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20203867087836842984_1409765832142&thread_id=&last_msg=0&_=1409765832143
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 17:49:57 Error: Fatal Error (4): syntax error, unexpected '{', expecting ';' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 85]
+2014-09-03 17:49:57 Error: [FatalErrorException] syntax error, unexpected '{', expecting ';'
+Request URL: /threads/view/?callback=jQuery20208070121214259416_1409765987548&thread_id=7&last_msg=0&_=1409765987552
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 17:51:37 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 85]
+2014-09-03 17:51:37 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /threads/view/?callback=jQuery20209746842589229345_1409766696470&thread_id=&last_msg=0&_=1409766696471
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 17:51:45 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 85]
+2014-09-03 17:51:45 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /threads/index?callback=jQuery202006447471887804568_1409766699553&_=1409766699555
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 17:51:47 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 85]
+2014-09-03 17:51:47 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /threads/view/?callback=jQuery202006447471887804568_1409766699553&thread_id=7&last_msg=0&_=1409766699556
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 85, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 17:52:38 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery20201846267031505704_1409766757617&thread_id=&last_msg=0&_=1409766757618
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 18:04:13 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery202009704207023605704_1409767452545&thread_id=&last_msg=0&_=1409767452546
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 18:07:38 Error: Fatal Error (1): Function name must be a string in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 84]
+2014-09-03 18:07:38 Error: [FatalErrorException] Function name must be a string
+Request URL: /threads/view/?callback=jQuery202042021471192128956_1409767456303&thread_id=7&last_msg=0&_=1409767456307
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Function name m...', '/var/lib/opensh...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/var/lib/opensh...', 84, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/var/lib/opensh...', 84, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 18:09:54 Error: Fatal Error (4): syntax error, unexpected ')', expecting ';' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/ThreadsController.php, line 84]
+2014-09-03 18:09:54 Error: [FatalErrorException] syntax error, unexpected ')', expecting ';'
+Request URL: /threads/view/?callback=jQuery202042021471192128956_1409767456303&thread_id=7&last_msg=0&_=1409767456309
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 84)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 84, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 84, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-03 18:26:03 Error: [NotFoundException] Invalid thread
+Request URL: /threads/view/?callback=jQuery202007514628767967224_1409768760987&thread_id=&last_msg=0&_=1409768760988
+Stack Trace:
+#0 [internal function]: ThreadsController->view()
+#1 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ThreadsController), Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ThreadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 18:36:47 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/app/Controller/MessagesController.php, line 83]
+2014-09-03 18:36:47 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /messages/add?callback=jQuery202010987480450421572_1409769387475&special=500&_=1409769387478
+Stack Trace:
+#0 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/lib/opensh...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/lib/opensh...', 83, Array)
+#2 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/lib/opensh...', 83, Array)
+#3 /var/lib/openshift/53e277be4382ec163b0008fe/app-root/runtime/repo/php/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

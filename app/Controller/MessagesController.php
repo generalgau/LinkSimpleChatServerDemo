@@ -59,43 +59,58 @@ class MessagesController extends AppController {
 		}
 	}
 
+	public function lastsynchok(){
+
+		 if ($this->request->is('get')) {
+                        if (
+                                array_key_exists("thread_id", $this->request->data) &&
+                                $this->request->data['thread_id'] > 0
+                        ){
+                                $this->Thread->id = $this->request->data['thread_id'];
+                                $this->Thread->saveField('lastsyncmsgid', $this->request->data['lastsyncmsgid']); 
+                                $this->sendReply( "lastsyncmsgid", $this->Thread);
+                        }
+                }
+	}
+
 /**
  * add method
  *
  * @return void
  */
 
-	public function add( $special=null ) {
-		if ( $special !== null ){
-
-		    for ($i=0; $i<10000; $i++){
-                	$this->request->data['Message'] = array(
-				'thread_id' => 7,
-				'msg_from' => "seth",
-				'msg_to' => "ilya",
-                        	'message' => "test".$i
-		  	);
-			$this->Message->create();
-                        $this->Message->save($this->request->data);
-		    }
-		} else
-		if ($this->request->is('get') &&
-                        array_key_exists("thread_id", $this->request->data['Message']) &&
-                        $this->request->data['Message']['thread_id'] > 0
-                ){
-                        $this->Message->create();
-                        if ($this->Message->save($this->request->data)){
-                                $m = $this->Message->find("first", array(
-                                        'conditions' => array(
-                                                'message_id' => $this->Message->getLastInsertId()                       )
-                                ));
-                                $this->sendReply("msg saved", $m );
-                        }
-                        else
-                                $this->sendFail("couldn't save msg");
-
-
-                } else {
+	public function add( ) {
+		if ($this->request->is('get') {
+			if ( array_key_exists("special", $this->request->data['Message'])){
+				$special = $this->request->data['Message'];
+				if ( $special > 0 && $special < 1000){
+			    		for ($i=0; $i < $special; $i++){
+        	        			$this->request->data['Message'] = array(
+							'thread_id' => 7,
+							'msg_from' => "seth",
+							'msg_to' => "ilya",
+	                        			'message' => "test".$i
+				  		);
+						$this->Message->create();
+                	        		$this->Message->save($this->request->data);
+					}
+				} 
+			} else
+                        if ( 	array_key_exists("thread_id", $this->request->data['Message']) &&
+	                        $this->request->data['Message']['thread_id'] > 0
+        	        ){
+                	        $this->Message->create();
+                        	if ($this->Message->save($this->request->data)){
+                                	$m = $this->Message->find("first", array(
+                                        	'conditions' => array(
+                                                	'message_id' => $this->Message->getLastInsertId()                       )
+	                                ));
+        	                        $this->sendReply("msg saved", $m );
+                	        }
+                        	else
+	                                $this->sendFail("couldn't save msg");
+                	}
+		} else {
 			if ($this->request->is('post')) {
 				$this->Message->create();
 				if ($this->Message->save($this->request->data)) {
@@ -144,15 +159,22 @@ class MessagesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-		$this->Message->id = $id;
-		if (!$this->Message->exists()) {
-			throw new NotFoundException(__('Invalid message'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->Message->delete()) {
-			$this->Session->setFlash(__('The message has been deleted.'));
+		if ($this->request->is('get') {
+                        if ( array_key_exists("special", $this->request->data['Message'])){
+				$this->Message->deleteAll( array( 'message_id < ' => 58 ));
+				// do I need to reset the lastsync?
+                    	}    
 		} else {
-			$this->Session->setFlash(__('The message could not be deleted. Please, try again.'));
+			$this->Message->id = $id;
+			if (!$this->Message->exists()) {
+				throw new NotFoundException(__('Invalid message'));
+			}
+			$this->request->onlyAllow('post', 'delete');
+			if ($this->Message->delete()) {
+				$this->Session->setFlash(__('The message has been deleted.'));
+			} else {
+				$this->Session->setFlash(__('The message could not be deleted. Please, try again.'));
+			}
+			return $this->redirect(array('action' => 'index'));
 		}
-		return $this->redirect(array('action' => 'index'));
-	}}
+	}

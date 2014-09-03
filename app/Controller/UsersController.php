@@ -22,12 +22,16 @@ public $helpers = array('Html', 'Form', 'Js'=>array("Jquery"));
 	}
 	
 	public function loggedin() {
-		$username['user'] = $this->Auth->user('username');
-		$username['uid'] = $this->Auth->user('id');
-		if ( $username !== null ) 
-			$this->sendReply ( "Login ok", $username );
-		else
-			$this->sendFail ("Unable to fetch user. Sorry, try again later.");
+ 		if ( $this->Auth->user('id') > 0 ){
+			$username['user'] = $this->Auth->user('username');
+			$username['uid'] = $this->Auth->user('id');
+			if ( $username !== null ) 
+				$this->sendReply ( "Login ok", $username );
+			else
+				$this->sendFail ("Unable to fetch user. Sorry, try again later.");
+		} else {
+			$this->sendFail ( "not logged in" );
+		}
 		
 	}
 
